@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+/* shared styles */
+.body-text-grey-color{
+    color: #3A3A3A;
+}
+
+.primary-btn{
+    background-color: #E02C6D;
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* header styles started */
+header{
+    margin: 0px auto;
+    padding: 50px 150px;
+}
+
+/* navbar styles started */
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    font-size: 2rem;
+    color: #3A3A3A;
+}
+
+.logo-color{
+    color:#E02C6D;
+    font-size: 2.5rem;
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 1.2rem;
+    font-weight: 600px;
+}
+
+.nav-icon{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+/* navbar styles ended */
+
+/* banner styles started */
+.banner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 80px;
+}
+
+.banner-title{
+    font-size: 3.2rem;
+    color: #3A3A3A;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner-img{
+    background-image: url(./images/Circle\ design.svg) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    
+}
+
+
+
+
+/* responsive styles started */
+/* for mobile devices */
+@media screen and (max-width: 576px){
+    header{
+        padding: 20px;
+    }
+
+    .nav-bar{
+    flex-direction: column;
+}
+
+.nav-menu{
+    gap: 20px;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 0.7rem;
+    font-weight: 500px;
+}
+
+.nav-icon{
+    gap: 25px;
+    
+}
+}
+
+/* for tablets or medium devices */
+
+@media screen and (min-width: 577px) and (max-width: 850px){
+    header{
+        padding: 35px;
+    }
+
+.nav-menu{
+    gap: 30px;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 1.1rem; 
+}
+
+.nav-icon{
+    gap: 30px;
+    
+}
+}
+
+/* for large devices */
+
+@media screen and (min-width: 851px) and (max-width: 1050px){
+    header{
+        padding: 40px;
+    }
+
+.nav-menu{
+    gap: 30px;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 1.2rem; 
+}
+
+.nav-icon{
+    gap: 30px;
+    
+}
+}
