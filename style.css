@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
 }
+
 /* shared styles */
-.body-text-grey-color{
+.body-text-grey-color {
     color: #3A3A3A;
 }
 
-.primary-btn{
+.primary-btn {
     background-color: #E02C6D;
     color: aliceblue;
     font-size: 1.2rem;
@@ -26,30 +27,30 @@ body{
 }
 
 /* header styles started */
-header{
+header {
     margin: 0px auto;
     padding: 50px 150px;
 }
 
 /* navbar styles started */
 
-.nav-bar{
+.nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-logo{
+.nav-logo {
     font-size: 2rem;
     color: #3A3A3A;
 }
 
-.logo-color{
-    color:#E02C6D;
+.logo-color {
+    color: #E02C6D;
     font-size: 2.5rem;
 }
 
-.nav-menu{
+.nav-menu {
     display: flex;
     list-style: none;
     gap: 35px;
@@ -57,22 +58,23 @@ header{
     align-items: center;
 }
 
-.nav-menu a{
+.nav-menu a {
     text-decoration: none;
     color: #3A3A3A;
     font-size: 1.2rem;
     font-weight: 600px;
 }
 
-.nav-icon{
+.nav-icon {
     display: flex;
     gap: 35px;
     align-items: center;
 }
+
 /* navbar styles ended */
 
 /* banner styles started */
-.banner-container{
+.banner-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,94 +82,166 @@ header{
     margin-top: 80px;
 }
 
-.banner-title{
+.banner-title {
     font-size: 3.2rem;
     color: #3A3A3A;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-.banner-img{
-    background-image: url(./images/Circle\ design.svg) ;
+.banner-img {
+    background-image: url(./images/Circle\ design.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    
-    
+
+
 }
 
+/* header section styles ended */
 
+/* brand section styles started */
+
+.brand-container {
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 30px 240px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, #f8f5f5, rgb(211, 209, 211), #f8f5f5) 1;
+}
 
 
 /* responsive styles started */
 /* for mobile devices */
-@media screen and (max-width: 576px){
-    header{
+@media screen and (max-width: 576px) {
+    header {
         padding: 20px;
     }
 
-    .nav-bar{
-    flex-direction: column;
-}
+    .nav-bar {
+        flex-direction: column;
+    }
 
-.nav-menu{
-    gap: 20px;
-}
+    .nav-menu {
+        gap: 20px;
+    }
 
-.nav-menu a{
-    text-decoration: none;
-    color: #3A3A3A;
-    font-size: 0.7rem;
-    font-weight: 500px;
-}
+    .nav-menu a {
+        text-decoration: none;
+        color: #3A3A3A;
+        font-size: 0.7rem;
+        font-weight: 500px;
+    }
 
-.nav-icon{
-    gap: 25px;
+    .nav-icon {
+        gap: 25px;
+
+    }
+
+    .banner-container {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .banner-title {
+        font-size: 1.8rem;
+    }
+
+    .banner-img {
+        max-width: 100%;
+    }
+
+    .banner-img img {
+        width: 100%;
+    }
+
+    .brand-container {
+        flex-direction: column;
+        margin: 30px;
+
+    }
     
-}
+
 }
 
 /* for tablets or medium devices */
 
-@media screen and (min-width: 577px) and (max-width: 850px){
-    header{
+@media screen and (min-width: 577px) and (max-width: 850px) {
+    header {
         padding: 35px;
     }
 
-.nav-menu{
-    gap: 30px;
-}
+    .nav-bar {
+        flex-direction: column;
+        gap: 35px;
+    }
 
-.nav-menu a{
-    text-decoration: none;
-    color: #3A3A3A;
-    font-size: 1.1rem; 
-}
 
-.nav-icon{
-    gap: 30px;
+    .nav-menu {
+        gap: 30px;
+    }
+
+    .nav-menu a {
+        text-decoration: none;
+        color: #3A3A3A;
+        font-size: 1.1rem;
+    }
+
+    .nav-icon {
+        gap: 30px;
+
+    }
+
+    .banner-container {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
+
+    .banner-img {
+        max-width: 100%;
+    }
+
+    .banner-img img {
+        width: 100%;
+    }
+
+    .brand-container {
+       flex-wrap: wrap;
+        margin: 50px;
+    }
     
-}
 }
 
 /* for large devices */
 
-@media screen and (min-width: 851px) and (max-width: 1050px){
-    header{
+@media screen and (min-width: 851px) and (max-width: 1050px) {
+    header {
         padding: 40px;
     }
 
-.nav-menu{
-    gap: 30px;
-}
+    .nav-menu {
+        gap: 30px;
+    }
 
-.nav-menu a{
-    text-decoration: none;
-    color: #3A3A3A;
-    font-size: 1.2rem; 
-}
+    .nav-menu a {
+        text-decoration: none;
+        color: #3A3A3A;
+        font-size: 1.2rem;
+    }
 
-.nav-icon{
-    gap: 30px;
-    
-}
+    .nav-icon {
+        gap: 30px;
+
+    }
+    .brand-container {
+        flex-wrap: wrap;
+         margin: 50px;
+     }
 }
